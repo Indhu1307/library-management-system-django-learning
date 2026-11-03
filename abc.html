@@ -1,0 +1,6 @@
+{ % foreach category in categories %}
+    <h1>{{category.name}}</h1>
+    { % for books in 'category'.books.all %}
+        <p>{{books.title}}</p>
+    { % endfor %}
+   { % endfor %} 
